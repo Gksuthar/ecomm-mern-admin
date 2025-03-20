@@ -43,7 +43,7 @@ const AddProductForm = () => {
     const fetchCategories = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:1000/api/routerCategory/"
+          "https://mernecommbackend-d6vr.onrender.com/api/routerCategory/"
         );
         if (response.status === 200) {
           setCategories(response.data.data);
@@ -111,7 +111,7 @@ const AddProductForm = () => {
         rating: formData.rating,
       };
       const response = await axios.post(
-        "http://localhost:1000/api/product/addProduct",
+        "https://mernecommbackend-d6vr.onrender.com/api/product/addProduct",
         payload
       );
       if (response.status === 200) {

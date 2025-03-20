@@ -14,7 +14,7 @@ const AddCategory = ({ onSubmit }) => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await axios.get("http://localhost:1000/api/categories");
+        const response = await axios.get("https://mernecommbackend-d6vr.onrender.com/api/categories");
         setCategories(response.data);
       } catch (error) {
         console.error("Error fetching categories", error);
@@ -31,7 +31,7 @@ const AddCategory = ({ onSubmit }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:1000/api/categories", category);
+      await axios.post("https://mernecommbackend-d6vr.onrender.com/api/categories", category);
       alert("Category added successfully");
       setCategory({ name: "", images: "", parentCatName: "", parentId: "" });
       if (onSubmit) onSubmit();

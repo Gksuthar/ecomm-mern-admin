@@ -35,7 +35,7 @@ const Products = ({openAddProductPanel}) => {
   useEffect(() => {
     const getAllProduct=async()=>{
       try {
-        const response = await axios.get('http://localhost:1000/api/product/') 
+        const response = await axios.get('https://mernecommbackend-d6vr.onrender.com/api/product/') 
         if (response.status===200) {
           setProducts(response.data.products)
           console.log(response.data.products);
