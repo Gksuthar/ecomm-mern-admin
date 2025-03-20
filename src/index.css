@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    font-family: "Roboto Condensed", serif;
+    background: #f1f1f1;
+}
+.MuiBadge-badge{background: #ff5252!important;}
+
+.ReactCollapse--collapse {
+    transition: height 300ms;
+  }
+  .btn-blue{
+    background: #3872fa !important;
+    color: #fff !important;
+  }
+  .btn-blue:hover{
+    background: #85a2e6 !important;
+  }
+
+  ::-webkit-scrollbar{
+    width: 10px !important;
+    height: 10px !important;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #ccc;
+  }
