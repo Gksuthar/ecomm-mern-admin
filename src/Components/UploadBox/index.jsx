@@ -36,7 +36,7 @@ const UploadBox = ({ multiple = false, onFileUpload }) => {
       });
   
       const response = await axios.post(
-        `https://mernecommbackend-d6vr.onrender.com/api/product/upload`,
+        `https://mernecommbackend-xxfd.onrender.com/api/product/upload`,
         formData,
         {
           headers: {
